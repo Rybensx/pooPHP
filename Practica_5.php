@@ -41,21 +41,28 @@ class Leon extends Animal{
 }
 
 class Tigre extends Animal{
+    public $raza;
+
+    public function __construct($raza = " ", $nombre =" ", $edad = " "){
+        $this->raza = $raza;
+        parent::__construct ($nombre, $edad);
+    }
+    
     public function getInfo() : void{
         echo "El tigre es de raza $this->raza, llamado: $this->nombre y es del genero " . parent::$genero;
     }
 }
 
-$leonRey = new Leon("Africano", "Furia", 5);
+$leonRey = new Leon("Pinta", "Furia", 5);
 $leonRey->getInfo();
 echo "<br>";
 $leonRey->getEdad();
 echo "<br>";
 echo "<br>";
-$tigreGrande=new Tigre("Indio", "Rigrillo", 2);
-$tigreGrande->getInfo();
+$tigreRey = new Tigre("Rallada", "Tigrillo", 2);
+$tigreRey->getInfo();
 echo "<br>";
 echo "<br>";
-$tigreGrande->getEdad();
+$tigreRey->getEdad();
 echo "<br>";
 ?>
