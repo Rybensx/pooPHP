@@ -47,7 +47,7 @@ class Tigre extends Animal{
         $this->raza = $raza;
         parent::__construct ($nombre, $edad);
     }
-    
+
     public function getInfo() : void{
         echo "El tigre es de raza $this->raza, llamado: $this->nombre y es del genero " . parent::$genero;
     }
@@ -61,7 +61,6 @@ echo "<br>";
 echo "<br>";
 $tigreRey = new Tigre("Rallada", "Tigrillo", 2);
 $tigreRey->getInfo();
-echo "<br>";
 echo "<br>";
 $tigreRey->getEdad();
 echo "<br>";
