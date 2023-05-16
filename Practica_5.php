@@ -36,13 +36,13 @@ class Leon extends Animal{
     }
 
     public function getInfo() : void{
-        echo "El leon es de raza $this->raza, llamado $this->nombre y es del genero " . parent::$genero;
+        echo "El leon es de raza $this->raza, llamado: $this->nombre y es del genero " . parent::$genero;
     }
 }
 
 class Tigre extends Animal{
     public function getInfo() : void{
-        echo "El tigre es de raza $this->raza, llamado: $this-> nombre y es del genero " . parent::$genero;
+        echo "El tigre es de raza $this->raza, llamado: $this->nombre y es del genero " . parent::$genero;
     }
 }
 
@@ -52,7 +52,7 @@ echo "<br>";
 $leonRey->getEdad();
 echo "<br>";
 echo "<br>";
-$tigreGrande=new Tigre("Indio". "Rigrillo", 2);
+$tigreGrande=new Tigre("Indio", "Rigrillo", 2);
 $tigreGrande->getInfo();
 echo "<br>";
 echo "<br>";
