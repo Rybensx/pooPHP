@@ -41,8 +41,8 @@ class Leon extends Animal{
 }
 
 class Tigre extends Animal{
-    public function getInfor() : void{
-        echo "El Tigre se llama: $this-> nombre y es del genero " . parent::$genero
+    public function getInfo() : void{
+        echo "El Tigre se llama: $this-> nombre y es del genero " . parent::$genero;
     }
 }
 
@@ -52,10 +52,10 @@ echo "<br>";
 $leonRey->getEdad();
 echo "<br>";
 echo "<br>";
-$elefanteGrande=new Elefante("India", 2);
-$elefanteGrande->getInfo();
+$tigreGrande=new Tigre("India", 2);
+$tigreGrande->getInfo();
 echo "<br>";
 echo "<br>";
-$elefanteGrande->getEdad();
+$tigreGrande->getEdad();
 echo "<br>";
 ?>
