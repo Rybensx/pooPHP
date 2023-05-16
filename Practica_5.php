@@ -46,13 +46,13 @@ class Tigre extends Animal{
     }
 }
 
-$leonRey = new Leon("Africano", "M", 5);
+$leonRey = new Leon("Africano", "Furia", 5);
 $leonRey->getInfo();
 echo "<br>";
 $leonRey->getEdad();
 echo "<br>";
 echo "<br>";
-$tigreGrande=new Tigre("India", 2);
+$tigreGrande=new Tigre("Indio". "Rigrillo", 2);
 $tigreGrande->getInfo();
 echo "<br>";
 echo "<br>";
