@@ -42,7 +42,7 @@ class Leon extends Animal{
 
 class Tigre extends Animal{
     public function getInfo() : void{
-        echo "El Tigre se llama: $this-> nombre y es del genero " . parent::$genero;
+        echo "El tigre es de raza $this->raza, llamado: $this-> nombre y es del genero " . parent::$genero;
     }
 }
 
